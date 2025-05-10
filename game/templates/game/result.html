@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Game Over</title>
+</head>
+<body>
+    {% if is_won %}
+        <h1>You Win!</h1>
+    {% else %}
+        <h1>Game Over</h1>
+    {% endif %}
+    <p>The word was: {{ word }}</p>
+    <a href="/">Play Again</a>
+</body>
+</html>
